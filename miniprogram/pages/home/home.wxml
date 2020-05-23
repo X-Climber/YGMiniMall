@@ -1,0 +1,10 @@
+<view class="pyg_index">
+	<!-- 搜索框 -->
+	<searchInput></searchInput>
+	<!-- 轮播图 -->
+	<swiper swiperList="{{swiperList}}"></swiper>
+	<!-- 导航数据 -->
+	<navigationList recommends="{{recommends}}"></navigationList>
+	<!-- 楼层数据 -->
+	<floorList floorList="{{floorList}}"></floorList>
+</view>

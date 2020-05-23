@@ -1,0 +1,27 @@
+<view class="goods">
+	<searchInput></searchInput>
+	<tab-control titles="{{tabs}}" bind:tabsItemChange="handleTabItemChange">
+		<block wx:if="{{tabs[0].isActive}}">
+			<view class="first_tab">
+				<block wx:for="{{goodsList}}" wx:key="goods_id">
+					<navigator class="goods_item" url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+						<!-- <--	左侧图片容器 -->
+						<view class="goods_item_img">
+							<image mode="widthFix" src="{{item.goods_big_logo ? item.goods_big_logo : 'http://mmbiz.qpic.cn/mmbiz_png/ddbhSQUiaIaoYHicLXFibdJ1ZOQHUVmc4JpDcYeGuMPn4YLAYg799C8m9rgDr70LHIS6RBoW0lXh8q0qI9zS1GVWg/0?wx_fmt=png.jpg'}}"></image>
+						</view>
+
+						<!-- 右侧数据容器 -->
+						<view class="goods_info">
+							<view class="goods_name">{{item.goods_name}}</view>
+							<view class="goods_price">￥{{item.goods_price}}</view>
+						</view>
+					</navigator>
+				</block>
+			</view>
+		</block>
+		<block wx:elif="{{tabs[1].isActive}}">1</block>
+		<block wx:elif="{{tabs[2].isActive}}">2</block>
+	</tab-control>
+
+  <backTop wx:if="{{showBackTop}}"></backTop>
+</view>

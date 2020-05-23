@@ -1,0 +1,32 @@
+.goods_item{
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+}
+.goods_item_img{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+image{  
+  width: 70%;
+}
+.goods_info{
+  flex: 3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.goods_name{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+  padding-bottom: 70rpx;
+}
+.goods_price{
+  color: var(--themeColor);
+  font-size: 35rpx;
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "searchInput":"/components/searchInput/searchInput",
+    "swiper":"/components/swiper/swiper",
+    "navigationList":"./childCpns/navigation/navigation",
+    "floorList":"./childCpns/floorList/floorList"
+  },
+  "navigationBarTitleText": "优购首页"
+}

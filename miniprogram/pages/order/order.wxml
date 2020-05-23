@@ -1,0 +1,5 @@
+<view>
+	<tab-control titles="{{tabs}}" bind:tabsItemChange="handleTabItemChange">
+    0
+  </tab-control>
+</view>

@@ -1,0 +1,16 @@
+<view class="tabs">
+	<!-- 标题 -->
+	<view class="tabs-title">
+		<block wx:for="{{titles}}" wx:key="id">
+			<view class="title-item {{item.isActive ? 'active' :''}}" 
+            bindtap="handleCurrentIndex" data-index="{{index}}"
+				>
+				<text>{{item.value}}</text>
+			</view>
+		</block>
+	</view>
+	<!-- 内容 -->
+	<view class="tabs-concent">
+    <slot></slot>
+  </view>
+</view>
