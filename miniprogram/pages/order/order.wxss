@@ -1,1 +1,24 @@
-/* pages/order/order.wxss */
+.order_item{
+  border-bottom: 1rpx solid #ccc;
+  padding: 15rpx;
+}
+.order_no_row{
+  display: flex;
+  justify-content: space-between;
+  padding: 15rpx;
+ 
+}
+.order_price_row{
+  display: flex;
+  justify-content: space-between;
+  padding: 15rpx;
+}
+.order_price_value{
+  color: var(--themeColor); 
+  font-size: 32rpx;
+}
+.order_time_row{
+  display: flex;
+  justify-content: space-between;
+  padding: 15rpx;
+}

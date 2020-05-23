@@ -49,6 +49,9 @@ image {
 .collect_text {
   padding-top: 15rpx;
 }
+.icon-shoucangbeifen{
+  color: orangered;
+}
 .goods_info_title {
   color: var(--themeColor);
   font-size: 32rpx;
