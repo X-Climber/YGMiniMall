@@ -20,9 +20,9 @@ Page({
   // ------- 网络请求函数----------
   // 轮播图数据
   _getSwiperList(){
-    getSwiperList().then(res =>{
-      
-      const swiperList = res.data.message
+    getSwiperList().then(res =>{    
+      const swiperList = res.data.message 
+      console.log(swiperList);   
       this.setData({
         swiperList
       })
@@ -32,16 +32,17 @@ Page({
   _getNavigationList(){
     getNavigationList().then(res =>{
       const recommends = res.data.message
+      
       this.setData({
         recommends
       })
     })
   },
-  // 导航数据
+  // 楼层数据
   _getFloorList(){
     getFloorList().then(res =>{
-      console.log(res)
       const floorList = res.data.message
+      console.log(floorList);
       this.setData({
         floorList
       })

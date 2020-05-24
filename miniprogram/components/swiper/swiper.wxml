@@ -2,7 +2,7 @@
 	<swiper circular autoplay interval="3000" indicator-dots indicator-active-color="#ff5777">
 		<block  wx:for="{{swiperList}}" wx:key="goods_id">
 			<swiper-item>
-				<navigator>
+				<navigator url="{{item.navigator_url}}">
 					<image src="{{item.image_src}}" mode="widthFix"></image>
 				</navigator>
 			</swiper-item>

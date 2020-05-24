@@ -54,7 +54,8 @@ Page({
   // 总页数
   totalPages: 1,
   onLoad: function (options) {
-    this.QueryParams.cid = options.cid;
+    this.QueryParams.cid = options.cid || "";
+    this.QueryParams.query = options.query || "";
     this._getGoodsList();
 
   },
